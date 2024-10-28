@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Meals</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- -----loading---- -->
+
+    <div class="loading">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+
+    </div>
+
+    <!-- ------side---- -->
+
+    <div class="side-menu position-fixed h-100 d-flex">
+        <div class="tabs h-100 d-flex flex-column justify-content-between p-4">
+            <div class="links overflow-hidden">
+                <a onclick="displaySearch()" href="#" class="position-relative">Search</a>
+                <a onclick="displayCategories()" href="#" class="position-relative">Categories</a>
+                <a onclick="displayArea()" href="#" class="position-relative">Area</a>
+                <a onclick="displayIngrredients()" href="#" class="position-relative">Ingrredients</a>
+                <a onclick="contactUs()" href="#" class="position-relative">Contact Us</a>
+            </div>
+            <div class="footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="copyright">
+                    <p>Copyright Â© 2019 All Rights <br> Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="head d-flex flex-column justify-content-between bg-white text-center py-4 px-2 text-black">
+            <img src="images/logo.png" alt="logo">
+            <i class="fa-solid fa-align-justify fa-2xl open"></i>
+            <div class="head-icons">
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------------- search ---------------------->
+
+    <div class="container search">
+
+    </div>
+
+
+
+
+
+
+<!-- ---------------------display Data --------------------------------->
+
+    <div class="container py-5">
+        <div class="row gy-4 randomData">
+
+        </div>
+    </div>
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

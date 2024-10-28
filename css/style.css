@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #f9f6f6;
+    background-color: #0D0D0D;
+    overflow: hidden;
+}
+
+.side-menu{
+    background-color: #0D0D0D;
+    z-index: 999;
+}
+.side-menu .tabs .links a {
+    color: #f9f6f6;
+    display: block;
+    text-decoration: none;
+    padding-top: 15px;
+    transition: all 0.3;
+}
+
+.side-menu .tabs .links a:hover {
+    color: rgb(116, 6, 6);
+}
+
+.side-menu i {
+    cursor: pointer;
+}
+
+.head img {
+    width: 50px;
+}
+
+.head i {
+    transition: all 0.2;
+}
+
+.head i:hover {
+    color: rgb(142, 7, 7);
+}
+
+.inner {
+    cursor: pointer;
+}
+
+.layer {
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f9f6f6ca;
+    transition:all .5s;
+    overflow: hidden;
+}
+
+.inner:hover .layer {
+    top: 0;
+}
+.cursor{
+    cursor: pointer;
+}
+.alert-trim {
+    display: inline-block;
+}
+
+.alert{
+    padding: .25rem;
+    margin: .5rem;
+}
+.loading{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #0D0D0D;
+    color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
