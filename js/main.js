@@ -337,13 +337,16 @@ function getTags(meal) {
 // ----------------search by name-------------------
 
 async function searchName(term){
+    $('.loading').fadeIn(500);
     let result = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`);
     let response =await result.json();
     console.log(response.meals);
     response.meals ? displayRandomMeal(response.meals) : displayRandomMeal([]);
+    $('.loading').fadeOut(500);
 }
 
 function displaySearch(){
+    
     let cartona ="";
     cartona+=`        
     <div class="row py-5">
@@ -356,17 +359,20 @@ function displaySearch(){
     </div>`
     document.querySelector('.search').innerHTML= cartona;
     document.querySelector('.randomData').innerHTML="";
+    
 }
 
 // ---------------------search by first letter-------------
 
 async function searchFirstLetter(term){
+    $('.loading').fadeIn(500);
     if(term==""){
         term = "a";
     }
     let result = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${term}`);
     let response =await result.json();
     response.meals ? displayRandomMeal(response.meals) : displayRandomMeal([]);
+    $('.loading').fadeOut(500);
 }
 
 // --------------------contact us-----------------
